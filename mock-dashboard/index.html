@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overwatch Review Lab - Incident Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 2rem; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.5rem; max-width: 800px; margin: 0 auto; }
+    .badge-critical { background: #da3633; color: white; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
+    .badge-active { background: #238636; color: white; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
+    h1 { color: #f0f6fc; font-size: 1.5rem; margin-top: 0; }
+    pre { background: #0d1117; padding: 1rem; border-radius: 4px; overflow-x: auto; color: #ff7b72; }
+    .btn { background: #238636; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h1>Active Incident: Pod auth-service-7f8d9b-x2q1 OOMKilled</h1>
+      <span class="badge-critical">CRITICAL</span>
+    </div>
+    <p><strong>Service:</strong> auth-service &nbsp;|&nbsp; <strong>Cluster:</strong> production-us-east-1 &nbsp;|&nbsp; <strong>Namespace:</strong> core</p>
+    <hr style="border-color: #30363d; margin: 1rem 0;">
+    <h3>Alert Context</h3>
+    <pre>Container 'auth-api' in pod 'auth-service-7f8d9b-x2q1' terminated with exit code 137 (OOMKilled).
+Memory usage reached 512Mi (100% of memory limit).
+Last state: Terminated (Reason: OOMKilled)
+Restart count: 4</pre>
+    <p>Overwatch Extension overlay active. Click the Overwatch copilot button in your browser toolbar or on the page to diagnose root cause and approve remediation.</p>
+  </div>
+</body>
+</html>
